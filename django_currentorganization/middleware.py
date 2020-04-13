@@ -46,6 +46,6 @@ def get_current_verified_organization():
     current_organization = get_current_organization()
     if current_organization is None:
         return None
-    if isinstance(current_organization, Organization) or if isinstance(current_organization, WaterUser):
+    if isinstance(current_organization, Organization) or isinstance(current_organization, WaterUser):
         return current_organization
     return None
